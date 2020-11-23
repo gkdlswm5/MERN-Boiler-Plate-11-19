@@ -19,7 +19,7 @@ app.use(express.json());
 app.use(passport.initialize());
 app.use(passport.session());
 
-//
+//register route
 app.post("/register", async (req, res) => {
   try {
     const hashedPass = await bcrypt.hash;
